@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-admob-mediation",
+  "version": "1.0.0",
+  "description": "Cordova AdMob Mediation Plugin - for different networks like Unity Ads",
+  "scripts": {
+    "version": "sync-package-version --cordova-plugin"
+  },
+  "cordova": {
+    "id": "cordova-plugin-admob-mediation",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": "paulstelzer/cordova-plugin-admob-mediation",
+  "author": "paulstelzer",
+  "license": "MIT",
+  "keywords": [
+    "cordova-android",
+    "cordova-ios",
+    "cordova",
+    "plugin",
+    "admob",
+    "unityads",
+    "mediation"
+  ],
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/"
+}
