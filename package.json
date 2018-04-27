@@ -24,6 +24,16 @@
     "unityads",
     "mediation"
   ],
+  "platforms": [
+    "android",
+    "ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.5.0"
+    }
+],
   "bugs": {
     "url": "https://github.com/"
   },
