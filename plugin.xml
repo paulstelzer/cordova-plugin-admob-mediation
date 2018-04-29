@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-admob-mediation" version="1.0.2"
-    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-admob-mediation" version="1.0.2" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
-
     <name>cordova-plugin-admob-mediation</name>
     <description>Cordova AdMob Mediation Plugin for different networks like Unity Ads</description>
-
     <engines>
         <engine name="cordova" version=">=3" />
     </engines>
-
     <platform name="android">
         <framework src="com.unity3d.ads:unity-ads:2.2.0" />
         <framework src="com.google.ads.mediation:unity:2.2.0.0" />
-
+        <framework src="com.facebook.android:audience-network-sdk:+" />
+        <framework src="com.google.ads.mediation:facebook:+" />
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
         <!-- when add additional mediation plugins -->
         <dependency id="cordova-plugin-multidex" />
     </platform>
-
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
         <pod id="GoogleMobileAdsMediationUnity" version="2.2.0.0" />
-
+        <pod id="GoogleMobileAdsMediationFacebook" version="4.28.1.1" />
         <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
         <dependency id="cordova-plugin-cocoapod-support" />
     </platform>
