@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-admob-mediation" version="1.0.1" 
+<plugin id="cordova-plugin-admob-mediation" version="1.0.2" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-admob-mediation</name>
@@ -14,7 +14,7 @@
         <framework src="com.google.ads.mediation:facebook:+" />
         <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
         <!-- when add additional mediation plugins -->
-        <dependency id="cordova-plugin-multidex" />
+        <dependency id="cordova-plugin-enable-multidex" />
     </platform>
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
