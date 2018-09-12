@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="cordova-plugin-admob-mediation" version="1.1.0" 
+<plugin id="cordova-plugin-admob-mediation" version="1.1.1" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-plugin-admob-mediation</name>
@@ -18,8 +18,8 @@
     </platform>
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
-        <pod id="GoogleMobileAdsMediationUnity" version="2.3.0.0" />
-        <pod id="GoogleMobileAdsMediationFacebook" version="4.99.3.0" />
+        <pod name="GoogleMobileAdsMediationUnity"/>
+        <pod name="GoogleMobileAdsMediationFacebook" />
         <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
         <dependency id="cordova-plugin-cocoapod-support" />
     </platform>
